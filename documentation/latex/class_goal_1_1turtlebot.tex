@@ -1,0 +1,143 @@
+\hypertarget{class_goal_1_1turtlebot}{}\doxysection{Goal.\+turtlebot Class Reference}
+\label{class_goal_1_1turtlebot}\index{Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_goal_1_1turtlebot_adc70bad48b27ba115daaaeb9d0c2d0f0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_goal_1_1turtlebot_a2c514822f195e39ea9dd0dd5d3fcc5e9}{callback}} (self, data)
+\item 
+def \mbox{\hyperlink{class_goal_1_1turtlebot_ad2e318c730b716acd69463d970330e31}{get\+\_\+distance}} (self, goal\+\_\+x, goal\+\_\+y)
+\item 
+def \mbox{\hyperlink{class_goal_1_1turtlebot_a9c49f8eec8c41e7714f571ba3befa5c0}{move2goal}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_goal_1_1turtlebot_a908f695d8827578952ae956360b98bfd}{velocity\+\_\+publisher}}
+\item 
+\mbox{\hyperlink{class_goal_1_1turtlebot_ac7d3ca89f311b912ba0aea6353c02434}{pose\+\_\+subscriber}}
+\item 
+\mbox{\hyperlink{class_goal_1_1turtlebot_a88073109e8ad81b2333c4da33b1a9a02}{pose}}
+\item 
+\mbox{\hyperlink{class_goal_1_1turtlebot_a9e319897151c9b97d0a54f26c0c8e024}{rate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Documentation of class
+
+More details
+\end{DoxyVerb}
+ 
+
+Definition at line 8 of file Goal.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_goal_1_1turtlebot_adc70bad48b27ba115daaaeb9d0c2d0f0}\label{class_goal_1_1turtlebot_adc70bad48b27ba115daaaeb9d0c2d0f0}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Goal.\+turtlebot.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Initializes the node
+    Publish to a topic "/cmd_vel"
+    Subscribe to a topic "/odom" and calls a "callback" function\end{DoxyVerb}
+ 
+
+Definition at line 15 of file Goal.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_goal_1_1turtlebot_a2c514822f195e39ea9dd0dd5d3fcc5e9}\label{class_goal_1_1turtlebot_a2c514822f195e39ea9dd0dd5d3fcc5e9}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!callback@{callback}}
+\index{callback@{callback}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily def Goal.\+turtlebot.\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}After being called by the subscriber 
+Returns:
+    Implement the recieved pose values
+\end{DoxyVerb}
+ 
+
+Definition at line 29 of file Goal.\+py.
+
+\mbox{\Hypertarget{class_goal_1_1turtlebot_ad2e318c730b716acd69463d970330e31}\label{class_goal_1_1turtlebot_ad2e318c730b716acd69463d970330e31}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!get\_distance@{get\_distance}}
+\index{get\_distance@{get\_distance}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{get\_distance()}{get\_distance()}}
+{\footnotesize\ttfamily def Goal.\+turtlebot.\+get\+\_\+distance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{goal\+\_\+x,  }\item[{}]{goal\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Goal.\+py.
+
+\mbox{\Hypertarget{class_goal_1_1turtlebot_a9c49f8eec8c41e7714f571ba3befa5c0}\label{class_goal_1_1turtlebot_a9c49f8eec8c41e7714f571ba3befa5c0}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!move2goal@{move2goal}}
+\index{move2goal@{move2goal}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{move2goal()}{move2goal()}}
+{\footnotesize\ttfamily def Goal.\+turtlebot.\+move2goal (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}"
+This functions behaves as a Proportional controller
+Set the linear velocity in X-axis and y-axis
+Publish a message
+Return:
+   Stop the robot after the movement is over
+\end{DoxyVerb}
+ 
+
+Definition at line 44 of file Goal.\+py.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_goal_1_1turtlebot_a88073109e8ad81b2333c4da33b1a9a02}\label{class_goal_1_1turtlebot_a88073109e8ad81b2333c4da33b1a9a02}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!pose@{pose}}
+\index{pose@{pose}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{pose}{pose}}
+{\footnotesize\ttfamily Goal.\+turtlebot.\+pose}
+
+
+
+Definition at line 25 of file Goal.\+py.
+
+\mbox{\Hypertarget{class_goal_1_1turtlebot_ac7d3ca89f311b912ba0aea6353c02434}\label{class_goal_1_1turtlebot_ac7d3ca89f311b912ba0aea6353c02434}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!pose\_subscriber@{pose\_subscriber}}
+\index{pose\_subscriber@{pose\_subscriber}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{pose\_subscriber}{pose\_subscriber}}
+{\footnotesize\ttfamily Goal.\+turtlebot.\+pose\+\_\+subscriber}
+
+
+
+Definition at line 24 of file Goal.\+py.
+
+\mbox{\Hypertarget{class_goal_1_1turtlebot_a9e319897151c9b97d0a54f26c0c8e024}\label{class_goal_1_1turtlebot_a9e319897151c9b97d0a54f26c0c8e024}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!rate@{rate}}
+\index{rate@{rate}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{rate}{rate}}
+{\footnotesize\ttfamily Goal.\+turtlebot.\+rate}
+
+
+
+Definition at line 26 of file Goal.\+py.
+
+\mbox{\Hypertarget{class_goal_1_1turtlebot_a908f695d8827578952ae956360b98bfd}\label{class_goal_1_1turtlebot_a908f695d8827578952ae956360b98bfd}} 
+\index{Goal.turtlebot@{Goal.turtlebot}!velocity\_publisher@{velocity\_publisher}}
+\index{velocity\_publisher@{velocity\_publisher}!Goal.turtlebot@{Goal.turtlebot}}
+\doxysubsubsection{\texorpdfstring{velocity\_publisher}{velocity\_publisher}}
+{\footnotesize\ttfamily Goal.\+turtlebot.\+velocity\+\_\+publisher}
+
+
+
+Definition at line 23 of file Goal.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_goal_8py}{Goal.\+py}}\end{DoxyCompactItemize}
