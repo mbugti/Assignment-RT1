@@ -6,11 +6,19 @@ from nav_msgs.msg import Odometry
 from math import pow,atan2,sqrt
 
 class turtlebot():
-
-
-    def __init__(self):
-
-
+    """
+    Documentation of class
+    
+    More details
+    """
+    
+    def __init__(self):        
+        """
+	    Initializes the node
+	    Publish to a topic "/cmd_vel"
+	    Subscribe to a topic "/odom" and calls a "callback" function
+	    """
+        
         rospy.init_node('turtlebot_controller', anonymous=True)
         self.velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
         self.pose_subscriber = rospy.Subscriber('/odom', Odometry, self.callback)
@@ -18,7 +26,12 @@ class turtlebot():
         self.rate = rospy.Rate(10)
 
  
-    def callback(self, data):
+    def callback(self, data):       
+        """
+	    After being called by the subscriber 
+	    Returns:
+	           Implement the recieved pose values
+	    """
 
         self.pose = data
         self.pose.x = round(self.position.x, 4)
@@ -29,6 +42,13 @@ class turtlebot():
         return distance
 
     def move2goal(self):
+        """"
+	    This functions behaves as a Proportional controller
+	    Set the linear velocity in X-axis and y-axis
+	    Publish a message
+	    Return:
+	          Stop the robot after the movement is over
+	    """
 
         goal_pose = Odometry()
         goal_pose.x = input("Set x goal:")
