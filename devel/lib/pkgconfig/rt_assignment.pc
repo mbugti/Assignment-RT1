@@ -1,0 +1,8 @@
+prefix=/home/malook/project_ws/devel
+
+Name: rt_assignment
+Description: Description of rt_assignment
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

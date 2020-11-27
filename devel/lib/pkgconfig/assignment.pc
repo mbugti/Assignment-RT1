@@ -1,0 +1,8 @@
+prefix=/home/malook/project_ws/devel
+
+Name: assignment
+Description: Description of assignment
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
