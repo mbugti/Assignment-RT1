@@ -55,7 +55,7 @@ Add this line to your .bashrc file
  * Add file path to your Bashrc. Go to homw directory, enable the hidden files. You will see a file " .bashrc" . At the bottom of the file add your file path. For example if your workspace goes by the name of catkin_ws. Add the following line
     
     ```
-    source /home/zaid/catkin_ws/devel
+    source /home/malook/catkin_ws/devel
     
 To run the system:
     
