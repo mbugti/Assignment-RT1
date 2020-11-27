@@ -14,7 +14,7 @@ In this section we will explain the repository's content.
 Source folder that contains the scripts
 * Goal.py (Python script that ask the user for Goal's Coordinates)
 
-### Project_documentation
+### Documentation
 This folder contains doxygen documntation of the project
 
 ## Installation
