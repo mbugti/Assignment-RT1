@@ -22,7 +22,7 @@ class turtlebot():
         rospy.init_node('turtlebot_controller', anonymous=True)
         self.velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
         self.pose_subscriber = rospy.Subscriber('/odom', Odometry, self.callback)
-        self.pose = Pose()
+        self.pose = odom()
         self.rate = rospy.Rate(10)
 
  
